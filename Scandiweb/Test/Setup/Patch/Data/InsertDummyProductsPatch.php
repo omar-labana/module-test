@@ -1,10 +1,11 @@
 <?php
 
 /**
- * @category    Example
- * @package     Example_Migration
- * @author      Ralfs Aizsils <info@scandiweb.com>
- * @copyright   Copyright (c) 2021 Scandiweb, Ltd (https://scandiweb.com)
+ * @category Scandiweb Migration Module
+ * @package Scandiweb_Test
+ * @author Omar AbdelHameed <omar.abdelhameed@scandiweb.com>
+ * @copyright Copyright (c) 2022 Scandiweb, Inc (https://scandiweb.com)
+ * @license http://opensource.org/licenses/OSL-3.0 The Open Software License 3.0 (OSL-3.0)
  */
 
 namespace Example\Migration\Setup\Patch\Data;
@@ -68,6 +69,11 @@ class InsertDummyProductsPatch implements DataPatchInterface
      * @var EavSetup
      */
     protected EavSetup $eavSetup;
+
+    /**
+     * @var CategoryLinkManagementInterface
+     */
+    protected CategoryLinkManagementInterface $categoryLink;
 
     /**
      * @var array
